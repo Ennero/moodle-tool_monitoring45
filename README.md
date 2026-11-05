@@ -1,4 +1,12 @@
-# Monitoring Moodle - `tool_monitoring`
+# Moodle Monitoring — adaptación para Moodle 4.5
+
+Este repositorio mantiene una adaptación de `tool_monitoring` para **Moodle 4.5 exclusivamente** (`supported = [405, 405]`). Incluye métricas administrativas y exportación Prometheus.
+
+El plugin original fue desarrollado en **MootDACH DevCamp**. Se conservan sus autores, avisos y documentación; la participación de Enner Mendizabal corresponde al mantenimiento y adaptación de este repositorio. El código se distribuye bajo **GNU GPL v3 o posterior**; consultar [LICENSE.md](LICENSE.md) y los créditos en [version.php](version.php).
+
+Para instalarlo, utilizar `admin/tool/monitoring` dentro de una instalación Moodle 4.5 y completar la actualización de plugins. Configurar un token del exportador antes de exponer Prometheus. Para desarrollo y comprobaciones, seguir [AGENTS.md](AGENTS.md) y la documentación del plugin que se conserva a continuación.
+
+---
 
 The **`tool_monitoring`** Plugin makes it easy to integrate standard monitoring setups (such as [Prometheus][prometheus home] & [Grafana][grafana oss home]) with any running [Moodle][moodle home] instance.
 

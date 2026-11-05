@@ -1,4 +1,21 @@
-.phpunit.cache/
-phpunit.xml
-/.idea/
-/.vscode/
+# General
+*.exe
+*.log
+*.tmp
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local configuration (commit examples, never personal values).
+.env
+.env.*
+!.env.example
+!.env.*.example
+!**/.env.example
+!**/.env.*.example
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
