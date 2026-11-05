@@ -1,21 +1,10 @@
-<div align="center">
+# Moodle Monitoring — adaptación para Moodle 4.5
 
-# 🔒 Moodle LMS Administrative Monitoring & Security Tool (PHP)
+Este repositorio mantiene una adaptación de `tool_monitoring` para **Moodle 4.5 exclusivamente** (`supported = [405, 405]`). Incluye métricas administrativas y exportación Prometheus.
 
-**Herramienta administrativa de monitorización de integridad del sistema y auditoría de accesos para Moodle 4.5+.**
+El plugin original fue desarrollado en **MootDACH DevCamp**. Se conservan sus autores, avisos y documentación; la participación de Enner Mendizabal corresponde al mantenimiento y adaptación de este repositorio. El código se distribuye bajo **GNU GPL v3 o posterior**; consultar [LICENSE.md](LICENSE.md) y los créditos en [version.php](version.php).
 
-[![Language](https://img.shields.io/badge/Language-PHP-blue?style=for-the-badge)](https://github.com/Ennero/moodle-tool_monitoring45)
-[![Course](https://img.shields.io/badge/Course-Desarrollo%20/%20Plataformas%20Educativas-003366?style=for-the-badge)](https://ingenieria.usac.edu.gt/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-
-</div>
-
----
-
-
-## 📌 Contexto Académico
-
-Proyecto desarrollado en el marco del curso **Desarrollo / Plataformas Educativas** de la carrera de Ingeniería en Ciencias y Sistemas en la Universidad de San Carlos de Guatemala (USAC).
+Para instalarlo, utilizar `admin/tool/monitoring` dentro de una instalación Moodle 4.5 y completar la actualización de plugins. Configurar un token del exportador antes de exponer Prometheus. Para desarrollo y comprobaciones, seguir [AGENTS.md](AGENTS.md) y la documentación del plugin que se conserva a continuación.
 
 ---
 
@@ -743,16 +732,3 @@ You should have received a copy of the GNU General Public License along with `to
 [prometheus docs data model]: https://prometheus.io/docs/concepts/data_model
 [prometheus docs instances]: https://prometheus.io/docs/concepts/jobs_instances
 [prometheus home]: https://prometheus.io
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
----
-
-## 👨‍💻 Autor
-
-- **Enner Mendizabal** - [@Ennero](https://github.com/Ennero)  
-- *Facultad de Ingeniería, Universidad de San Carlos de Guatemala.*
